@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta charset="utf-8">
+
 	<title>Foody</title>
+
+	<link rel="stylesheet" media="screen" href="css/responsive.css" type="text/css">
+
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Poppins:40,0,700" rel="stylesheet">
+
 	<script src="js/main.js"></script>
+
 </head>
 <body>
 
@@ -22,6 +30,9 @@
 					<li><a href="#">GALLERY</a></li>
 					<li><a href="#">BLOG</a></li>
 					<li><a href="#">CONTACTS</a></li>
+					<li class="icon" onclick="openMenu();">
+						<a href="javascript:void(0);">&#9776;</a> 
+					</li>
 				</ul>
 			</nav>
 	
@@ -46,16 +57,16 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore mag</p>
 						</div>
-				</div>
-				<div class="ceo">
-					<img id="small" src="img/travis.jpg" alt="C.E.O" width="50" height="50">
-					<div class="ceo-text">
-						<h4>PAUL TAIWO</h4>
-						<h6 style="color:#ff0000;">C.E.O FOODY</h6>
-					</div>
+						<div class="ceo">
+							<img id="small" src="img/travis.jpg" alt="C.E.O" width="50" height="50">
+							<div class="ceo-text">
+								<h4>PAUL TAIWO</h4>
+								<h6 style="color:#ff0000;">C.E.O FOODY</h6>
+							</div>
+						</div>
 				</div>
 			</div>
-			<div class="flex-item1">
+			<div class="flex-item1" id="flex-image">
 				<div class="content2">
 					<img src="img/eaters.jpg" alt="Image">
 				</div>
@@ -63,8 +74,7 @@
 		</div>
 	</section>
 
-	<section>
-		<div class="header">
+	<section id="food-menu">
 			<nav>
 				<ul class="list">
 					<li class="active"><a href="">ALL</a></li>
@@ -75,7 +85,7 @@
 					<li><a href="">SALLAD & LETTUCES</a></li>
 				</ul>
 			</nav>
-		</div>
+
 		<div class="flex-container">
 			<div class="flex-item2">
 				<img src="img/pizza.jpg" alt="Pizza">
@@ -100,6 +110,7 @@
 			<div class="hwrap">
 				<h1>Choose Your Dish</h1>
 			</div>
+
 			<nav>
 				<ul class="menu-list">
 					<li><a href="">Snacks</a></li>
@@ -107,18 +118,18 @@
 					<li><a href="">Food</a></li>
 					<li><a href="">Reataurent</a></li>
 				</ul>
-				<hr style="width:500px;">
 			</nav>
+
 			<div class="flex-container">  <!-- Flex start -->
 			<!--  1st four list -->
 				<div class="flex-item1"><!-- First Column -->
-				  <div class="center">
+				  <div class="align1">
 
 					<div class="dish"><!-- Item one -->
 						<img src="img/pizza.jpg" alt="image">
 						<div class="dish-text">
 							<h5 style="color:#f00">CHINESE EGG CAKE</h5>
-							<p>Chinese mustard/Chipotle/Mayonnise</p>
+							<p>Chines musterd/Chipotle/Mayonnise</p>
 						</div>
 						<div class="price">
 							<h6>$9.4</h6>
@@ -129,7 +140,7 @@
 						<img src="img/pizza.jpg" alt="image">
 						<div class="dish-text">
 							<h5 style="color:#f00">CHINESE EGG CAKE</h5>
-							<p>Chinese mustard/Chipotle/Mayonnise</p>
+							<p>Chines musterd/Chipotle/Mayonnise</p>
 						</div>
 						<div class="price">
 							<h6>$9.4</h6>
@@ -140,7 +151,7 @@
 						<img src="img/pizza.jpg" alt="image">
 						<div class="dish-text">
 							<h5 style="color:#f00">CHINESE EGG CAKE</h5>
-							<p>Chinese mustard/Chipotle/Mayonnise</p>
+							<p>Chines musterd/Chipotle/Mayonnise</p>
 						</div>
 						<div class="price">
 							<h6>$9.4</h6>
@@ -151,7 +162,7 @@
 						<img src="img/pizza.jpg" alt="image">
 						<div class="dish-text">
 							<h5 style="color:#f00">CHINESE EGG CAKE</h5>
-							<p>Chinese mustard/Chipotle/Mayonnise</p>
+							<p>Chines musterd/Chipotle/Mayonnise</p>
 						</div>
 						<div class="price">
 							<h6>$9.4</h6>
@@ -163,52 +174,53 @@
 
 			<!--  2nd four list -->
 				<div class="flex-item1"><!-- Second Column -->
-			
-					<div class="dish"><!-- Item one -->
-						<img src="img/pizza.jpg" alt="image">
-						<div class="dish-text">
-							<h5 style="color:#f00">CHINESE EGG CAKE</h5>
-							<p>Chinese mustard/Chipotle/Mayonnise</p>
-						</div>
-						<div class="price">
-							<h6>$9.4</h6>
-						</div>
-					</div>
+					<div class="align2">
 
-					<div class="dish"><!-- Item two -->
-						<img src="img/pizza.jpg" alt="image">
-						<div class="dish-text">
-							<h5 style="color:#f00">CHINESE EGG CAKE</h5>
-							<p>Chinese mustard/Chipotle/Mayonnise</p>
+						<div class="dish"><!-- Item one -->
+							<img src="img/pizza.jpg" alt="image">
+							<div class="dish-text">
+								<h5 style="color:#f00">CHINESE EGG CAKE</h5>
+								<p>Chines musterd/Chipotle/Mayonnise</p>
+							</div>
+							<div class="price">
+								<h6>$9.4</h6>
+							</div>
 						</div>
-						<div class="price">
-							<h6>$9.4</h6>
-						</div>
-					</div>
 
-					<div class="dish"><!-- Item three -->
-						<img src="img/pizza.jpg" alt="image">
-						<div class="dish-text">
-							<h5 style="color:#f00">CHINESE EGG CAKE</h5>
-							<p>Chinese mustard/Chipotle/Mayonnise</p>
+						<div class="dish"><!-- Item two -->
+							<img src="img/pizza.jpg" alt="image">
+							<div class="dish-text">
+								<h5 style="color:#f00">CHINESE EGG CAKE</h5>
+								<p>Chines musterd/Chipotle/Mayonnise</p>
+							</div>
+							<div class="price">
+								<h6>$9.4</h6>
+							</div>
 						</div>
-						<div class="price">
-							<h6>$9.4</h6>
-						</div>
-					</div>
 
-					<div class="dish"><!-- Item four -->
-						<img src="img/pizza.jpg" alt="image">
-						<div class="dish-text">
-							<h5 style="color:#f00">CHINESE EGG CAKE</h5>
-							<p>Chinese mustard/Chipotle/Mayonnise</p>
+						<div class="dish"><!-- Item three -->
+							<img src="img/pizza.jpg" alt="image">
+							<div class="dish-text">
+								<h5 style="color:#f00">CHINESE EGG CAKE</h5>
+								<p>Chines musterd/Chipotle/Mayonnise</p>
+							</div>
+							<div class="price">
+								<h6>$9.4</h6>
+							</div>
 						</div>
-						<div class="price">
-							<h6>$9.4</h6>
-						</div>
-					</div>
-				<!-- End of 2nd four list -->
 
+						<div class="dish"><!-- Item four -->
+							<img src="img/pizza.jpg" alt="image">
+							<div class="dish-text">
+								<h5 style="color:#f00">CHINESE EGG CAKE</h5>
+								<p>Chines musterd/Chipotle/Mayonnise</p>
+							</div>
+							<div class="price">
+								<h6>$9.4</h6>
+							</div>
+						</div>
+					<!-- End of 2nd four list -->
+					</div>
 				</div><!-- End Second Column -->
 			</div><!-- Flex Ends -->
 
@@ -221,17 +233,17 @@
 			</div>
 			<form class="form-inline"><!-- Form -->
 				<div class="form-control">
-					<label class="label">Date</label>
+					<label class="label">Date </label>
 					<input type="date" placeholder="Date">
 				</div>
 
 				<div class="form-control">
-					<label class="label">Time</label>
+					<label class="label">Time </label>
 					<input type="time" placeholder="Time">
 				</div>
 
 				<div class="form-control">
-					<label class="label">Person</label>
+					<label class="label">Person </label>
 					<input type="text" placeholder="Person">
 				</div>
 
@@ -252,8 +264,8 @@
 		<div class="flex-container">
 
 			<div class="photo-card_wrap">
-			  <div class="photo-card"><!-- Starting -->
-				<img src="img/aaron.jpg" alt="Mr Chef" width="169" height="200">
+			  <div class="photo-card" id="one"><!-- Starting -->
+				<img src="img/aaron.jpg" alt="Mr Chef" width="100%" height="70%">
 
 				<div class="chef-details">
 					<div class="chef-name">
@@ -273,8 +285,8 @@
 
 			</div><!-- End -->
 
-			<div class="photo-card"><!-- Starting -->
-				<img src="img/aaron.jpg" alt="Mr Chef" width="169" height="200">
+			<div class="photo-card"  id="two"><!-- Starting -->
+				<img src="img/aaron.jpg" alt="Mr Chef" width="100%" height="70%">
 
 				<div class="chef-details">
 					<div class="chef-name">
@@ -294,8 +306,8 @@
 
 			</div><!-- End -->
 
-			<div class="photo-card"><!-- Starting -->
-				<img src="img/aaron.jpg" alt="Mr Chef" width="169" height="200">
+			<div class="photo-card" id="three"><!-- Starting -->
+				<img src="img/aaron.jpg" alt="Mr Chef" width="100%" height="70%">
 
 				<div class="chef-details">
 					<div class="chef-name">
@@ -315,8 +327,8 @@
 
 			</div><!-- End -->
 
-			<div class="photo-card"><!-- Starting -->
-				<img src="img/aaron.jpg" alt="Mr Chef" width="169" height="200">
+			<div class="photo-card" id="four"><!-- Starting -->
+				<img src="img/aaron.jpg" alt="Mr Chef" width="100%" height="70%">
 
 				<div class="chef-details">
 					<div class="chef-name">
@@ -343,10 +355,9 @@
 
 	<footer id="hero-footer">
 		<div class="footer-text">
-			<div class="footer-head">
 				<h1>SUBSCRIBE NOW</h1>
 				<h6>This help us</h6>
-			</div>
+
 				<input type="text" placeholder="Enter email here...">
 				<button class="btn-red">Subscribe</button>
 				<div class="flat-icons">

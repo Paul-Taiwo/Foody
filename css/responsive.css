@@ -1,0 +1,184 @@
+/* Tablets */
+@media only screen and (max-width:800px) and (min-width:680px) {
+
+	body {
+		box-sizing:border-box;
+	}
+
+	header#header {
+		height:10%;
+	}
+
+	ul.header_list {
+		margin-left:0;
+		margin-top:1%;
+	}
+
+	ul.header_list li a {
+		margin:5px;
+	}
+
+	.flex-container {
+		justify-content:center;
+		-webkit-justify-content:center;
+	}
+
+	.align1 {
+		top:50%;
+		left:0;
+		margin-left:-20px;
+		transform:translate(-50%, -50%);
+		position:absolute;
+	}
+
+	.align2 {
+		top:50%;
+		margin-left:30px;
+		transform:translate(-50%, -50%);
+		position:absolute;
+	}
+
+	.dish {
+	width:100px;
+	height:70px;
+	display:flex;
+	-webkit-display:flex;
+	}
+}
+
+/* Mobile Phone */
+@media only screen and (max-width:680px) {
+	
+	header#header{
+		height:50px;
+	}
+
+	div.logo {
+		font-size:10px;
+		margin:10px 20px;
+	}
+
+	nav ul.header_list li {
+		display:none;
+	}
+
+	nav ul.header_list li.icon {
+		display:inline-block;
+		float:right;
+		padding:2px;
+		margin:2% 5%;
+	}
+
+	ul.header_list.responsive {
+	 	position: relative;
+	 	z-index:3;
+	 	background-color:#fff;
+	 	border:1px solid red;
+	 	width:100%;
+	 	padding:3px;
+	 }
+
+	 ul.header_list.responsive li.icon {
+	    position: absolute;
+	    right:0;
+	    top:0;
+	    background-color:;
+	 }
+
+	 ul.header_list.responsive li {
+	    float: none;
+	    display: inline;
+	 }
+
+	 ul.header_list.responsive li a {
+	    display: block;
+	   	color:#000;
+	    text-align: left;
+	  }
+
+	  .flex-container {
+	  	flex-direction:column;
+	  	-webkit-flex-direction:column;
+	  	-moz-flex-direction:column;
+	  	-o-flex-direction:column;
+	  }
+
+	  .flex-item1 {
+	  	width:100%;
+	  }
+
+	  .content1 {
+		margin:100% 43%;
+	  }
+
+	  #flex-image {
+	  		display:none;
+	  }
+
+	  #food-menu {
+	  	display:none;
+	  }
+
+	  div.dish {
+	  	width:300px;
+	  }
+
+	  .align1 {
+	  	margin:110% 40%;
+	  }
+
+	  .align2 {
+	  	display:none;
+	  } 
+
+	  div.reserve-text {
+	  	position:absolute;
+	  	top:25%;
+	  }
+
+	  div.reshead {
+	  	width:200px;
+	  	margin:0 0 8% 0;
+	  	padding:0;
+	  }
+
+	   div.reshead h1 {
+	   	font-size:20px;
+	   }
+
+	  form.form-inline {
+	  	display:block;
+	  	width:100%;
+	  	margin:auto;
+	  }
+
+	  div.form-control {
+	  	margin:1% 10%;
+	  	width:80%;
+	  	padding:0 10%;
+	  }
+
+	  div.footer-text input[type=text] {
+		width:300px;
+		margin:0 2%;
+		padding:8px; 
+	  }
+
+	  div.photo-card_wrap {
+	  	width:100%;
+	  	margin:0;
+	  }
+
+	  #one, #two {
+	  	margin:1% 2%;
+	  	width:45%;
+	  }
+
+	  #wrinkled,
+	  #pineapple,
+	  #three,
+	  #four {
+	  	display:none;
+	  }
+
+}

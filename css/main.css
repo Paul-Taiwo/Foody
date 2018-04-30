@@ -5,10 +5,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-header {
+#header {
 	display:block;
 	width:100%;
-	height: 50px;
+	height:50px;
 	position:fixed;
 	z-index:4;
 }
@@ -28,20 +28,21 @@ header.onscroll nav ul.header_list li.active a {
 	color:#ff9900;
 }
 
-nav {
-	margin:5px 100px;
+#header nav {
+	display:flex;
+	margin:2% 5%;
 }
 
 .logo {
-	margin:5px 100px;
+	margin:1% 10%;
 	padding:0;
 	float:left;
 	color:#eee;
 }
 
 .header_list {
-	float:right;
-	margin:8px 50px;
+	margin-left:10%;
+	width:100%;
 }
 
 .header_list li{
@@ -50,9 +51,10 @@ nav {
 }
 
 .header_list li a {
-	margin: 10px;
+	margin: 2%;
 	color:#fff;
 	text-decoration:none;
+	transition:.5s;
 }
 
 .header_list li a:hover,
@@ -61,8 +63,12 @@ nav {
 }
 
 .header_list li.active a,
-.list li.active a {
+nav ul.list li.active a {
 	color:#ff9900;
+}
+
+ul.header_list li.icon {
+	display:none;
 }
 
 #hero-image {
@@ -105,6 +111,8 @@ nav {
 
 .flex-item1 {
 	width:50%;
+	height:auto;
+	position:relative;
 }
 
 .flex-item2 {
@@ -117,9 +125,26 @@ nav {
 	height:300px;
 }
 
-.center {margin:0 150px;}
+.align1 {
+	top:50%;
+	left:60%;
+	transform:translate(-50%, -50%);
+	position:absolute;
+}
 
-.content1 {margin:80px 0 10px 200px;}
+.align2 {
+	top:50%;
+	left:40%;
+	transform:translate(-50%, -50%);
+	position:absolute;
+}
+
+.content1 {
+	top:40%;
+	left:60%;
+	transform:translate(-50%, -50%);
+	position:absolute;
+}
 
 .content1 h1 {
 	font-size:40px;
@@ -148,7 +173,6 @@ nav {
 .ceo {
 	height:70px;
 	display:flex;
-	margin:0 0 0 200px;
 	padding:10px;
 }
 
@@ -161,15 +185,17 @@ nav {
 	background-position:center;
 }
 
-.header {
-	display:block;
+#food-menu nav {
+	display:flex;
 	width:100%;
 	height:50px;
+	text-align:center;
 	background-color:#f3f1f1;
 }
 
-.list {
-	margin:0 170px;
+nav ul.list {
+	width:100%;
+	margin:0 5%;
 }
 
 .list li {
@@ -230,37 +256,35 @@ nav {
 }
 
 .dish {
-	width:300px;
+	width:320px;
 	height:70px;
-	display:block;
+	display:flex;
+	-webkit-display:flex;
 	box-shadow:1px 2px 15px grey;
 	margin:20px;
 }
 
 .dish img {
-	width:70px;
-	height:70px;
-	float:left;
+	width:23%;
+	height:100%;
 }
 
 .dish-text{
 	position:absolute;
 	font-size:10px;
-	float:right;
-	margin:20px 80px;
+	margin:12px 80px;
 	padding:0;
+	width:63%;
 }
 
 .dish-text p {
-	margin:0;
+	margin:2% 0;
 	padding:0;
-	font-family:Angsana New;
-	font-size:17px;
+	font-size:0.1vh;
 }
 
 .price {
-	margin:20px 10px;
-	float:right;
+	margin:20px 65%;
 	color:#f00;
 }
 
@@ -290,12 +314,12 @@ nav {
 }
 
 .form-inline {
+	display:flex;
 	width:700px;
 	height:50px;
 }
 
 .form-control {
-	float:left;
 	text-align:left;
 	margin:5px;
 }
@@ -334,6 +358,7 @@ input[type=time] {
 	background-color:#996600;
 	cursor:pointer;
 	padding:15px 40px;
+	transition:.5s;
 }
 
 .btn:hover {
@@ -345,7 +370,8 @@ input[type=time] {
 	border:1px solid transparent;
 	margin:0;
 	padding:0;
-	height:550px;
+	width:100%;
+	height:auto;
 }
 
 .chef-header {
@@ -358,15 +384,14 @@ input[type=time] {
 	width:100%;
 	height:300px;
 	text-align:center;
-	margin:0 30px;
-	padding:0 0 0 10%;
+	margin:0 11%;
+	padding:0 0 0 2%;
 }
 
 .photo-card {
-	border:2px solid transparent;
-	width:172px;
-	height:300px;
-	margin:0 10px;
+	width:25%;
+	height:100%;
+	margin:0 1%;
 }
 
 .chef-details {
@@ -398,18 +423,11 @@ input[type=time] {
 	height:380px;
 }
 
-.footer-head {
-	text-align:center;
-	margin:100px 0;
-	padding:0;
-	position:absolute;
-	width:500px;
-}
-
 .footer-text {
 	top:50%;
 	left:50%;
 	color:#fff;
+	width:100%;
 	text-align:center;
 	position:absolute;
 	transform:translate(-50%,-50%);
@@ -417,11 +435,11 @@ input[type=time] {
 
 .footer-text input[type=text] {
 	width:350px;
-	margin:200px 0 10px;
+	margin:50px 0 20px;
 }
 
 .flat-icons {
-	margin:20px 0 5px 0;
+	margin:20px 0 20px 0;
 	padding:15px;
 	text-align:center;
 }

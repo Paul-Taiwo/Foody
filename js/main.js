@@ -6,4 +6,10 @@ var nav = document.getElementById('header');
 		}else{
 			header.classList.remove('onscroll');
 		}
+
 	}
+
+function openMenu() {
+	document.getElementsByClassName('header_list')
+	[0].classList.toggle('responsive')
+}
