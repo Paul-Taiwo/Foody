@@ -54,8 +54,8 @@
 	}
 
 	div.logo {
-		font-size:10px;
-		margin:10px 20px;
+		font-size:11px;
+		margin:12px 20px;
 	}
 
 	nav ul.header_list li {
@@ -69,33 +69,13 @@
 		margin:2% 5%;
 	}
 
-	ul.header_list.responsive {
-	 	position: relative;
-	 	z-index:3;
-	 	background-color:#fff;
-	 	border:1px solid red;
-	 	width:100%;
-	 	padding:3px;
-	 }
+	/* Hero text */
 
-	 ul.header_list.responsive li.icon {
-	    position: absolute;
-	    right:0;
-	    top:0;
-	    background-color:;
-	 }
+	div.hero-text  {width:100%;}
 
-	 ul.header_list.responsive li {
-	    float: none;
-	    display: inline;
-	 }
+	div.hero-text h1 {font-size:30px;}
 
-	 ul.header_list.responsive li a {
-	    display: block;
-	   	color:#000;
-	    text-align: left;
-	  }
-
+	/* Flex */
 	  .flex-container {
 	  	flex-direction:column;
 	  	-webkit-flex-direction:column;

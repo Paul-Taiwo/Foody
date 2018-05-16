@@ -5,12 +5,14 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+p {font-size:1em;}
+
 #header {
-	display:block;
 	width:100%;
 	height:60px;
 	position:fixed;
 	z-index:4;
+	transition:0.5s ease-in-out;
 }
 
 header.onscroll {
@@ -70,6 +72,8 @@ nav ul.list li.active a {
 ul.header_list li.icon {
 	display:none;
 }
+
+/* Side Navigation */
 
 #hero-image {
 	width:100%;
@@ -326,12 +330,12 @@ nav ul.list {
 
 .label {color:#fff;}
 
-input[type=text] {
+input[type=email] {
 	width:120px;
 	padding:8px;
 } 
 
-input[type=date], 
+input[type=text], 
 input[type=time] {
 	width:120px;
 	padding:6px;

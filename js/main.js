@@ -1,15 +1,10 @@
-var nav = document.getElementById('header');
+var head = document.getElementById('header');
 
 	window.onscroll = function() {
-		if(window.pageYOffset > 300){
+		if(window.pageYOffset > 50){
 			header.classList.add('onscroll');
-		}else{
+		} else {
 			header.classList.remove('onscroll');
 		}
 
 	}
-
-function openMenu() {
-	document.getElementsByClassName('header_list')
-	[0].classList.toggle('responsive')
-}
