@@ -17,7 +17,7 @@
 	ul.header_list li a {
 		margin:5px;
 	}
-
+	
 	.flex-container {
 		justify-content:center;
 		-webkit-justify-content:center;
@@ -113,11 +113,11 @@
 
 	  div.reserve-text {
 	  	position:absolute;
-	  	top:25%;
+	  	top:50%;
 	  }
 
 	  div.reshead {
-	  	width:200px;
+	  	width:100%;
 	  	margin:0 0 8% 0;
 	  	padding:0;
 	  }

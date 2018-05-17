@@ -159,7 +159,7 @@ ul.header_list li.icon {
 	height:60px;
 }
 .prap p {
-	font-size: 3px;
+	font-size:12px;
 	margin:10px 0;
 	padding:0;
 }
@@ -209,7 +209,7 @@ nav ul.list {
 
 .list li a {
 	color:#000;
-	font-size:10px;
+	font-size:15px;
 	text-decoration:none;
 }
 
@@ -255,11 +255,11 @@ nav ul.list {
 
 .menu-list li a {
 	color:#000;
-	font-size:2px;
+	font-size:15px;
 	text-decoration:none;
 }
 
-.dish {
+div.dish {
 	width:320px;
 	height:70px;
 	display:flex;
@@ -268,27 +268,31 @@ nav ul.list {
 	margin:20px;
 }
 
-.dish img {
+div.dish img {
 	width:23%;
 	height:100%;
 }
 
-.dish-text{
+div.dish-text{
 	position:absolute;
 	font-size:10px;
-	margin:12px 80px;
+	margin:40px 0;
+	left:60%;
 	padding:0;
 	width:63%;
+	transform:translate(-50%, -50%);
 }
 
-.dish-text p {
+div.dish-text h5 {font-size:15px;}
+
+div.dish-text p {
 	margin:2% 0;
 	padding:0;
-	font-size:0.1vh;
+	font-size:12px;
 }
 
-.price {
-	margin:20px 65%;
+div.price {
+	margin:18px 65%;
 	color:#f00;
 }
 
@@ -320,7 +324,8 @@ nav ul.list {
 .form-inline {
 	display:flex;
 	width:700px;
-	height:50px;
+	height:auto;
+	padding:5px;
 }
 
 .form-control {
@@ -330,16 +335,12 @@ nav ul.list {
 
 .label {color:#fff;}
 
-input[type=email] {
+input[type=date],
+input[type=text], 
+input[type=time]  {
 	width:120px;
 	padding:8px;
 } 
-
-input[type=text], 
-input[type=time] {
-	width:120px;
-	padding:6px;
-}
 
 .btn-red {
 	color:#fff;
