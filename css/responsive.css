@@ -1,6 +1,26 @@
 /* Larger Desktop */
 @media only screen and (min-width:1050px) {
+	.header_list {
+		margin-left: 40%;
+	}
 
+	div.dish {
+		width: 475px;
+	}
+
+	.btn-red {
+		margin-top: 14px;
+    	padding: 16px 34px;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width:800px) and (max-width: 1044px) {
+	.btn-red {
+		margin-top: 15px;
+    	padding: 15px 30px;
+    	width: 130px;
+    }
 }
 
 /* Tablets */
@@ -10,7 +30,7 @@
 		box-sizing:border-box;
 	}
 
-	header#header {
+	header {
 		height:10%;
 	}
 
@@ -48,36 +68,42 @@
 		display:flex;
 		-webkit-display:flex;
 	}
+
+	.btn-red {
+		margin-top: 17px;
+		padding: 14px 0px;
+		width: 130px;
+	}
 }
 
 /* Mobile Phone */
 @media only screen and (max-width:680px) {
 	
 	/*Navigation*/
-	header#header{
+	header{
 		height:50px;
-		background-color:#fff;
+		color:#fff;
 		transition: 0.5s;
 	}
 
 	div.logo {
 		font-size:11px;
 		margin:12px 20px;
-		color:#000;
+		color:#fff;
 	}
 
-	#header nav.navtoggle {
-		border: 1px solid blue;
+	header nav.navtoggle {
 		display: none;
 	}
 
-	#header nav.mini {
+	header nav.mini {
 		display:block;
 		height:auto;
 		position:absolute;
 		top:85%;
 		left:0;
 		right:0;
+		transition: 0.3s;
 	}
 
 	ul.header_list {margin:0;}
@@ -96,11 +122,10 @@
 		float:right;
 		padding:2px;
 		margin:0.6em 5%;
-		color: #000;
 	}
 
 	#icon a {
-		color: #000;
+		color: #fff;
 	}
 
 	/* Hero text */
@@ -171,8 +196,8 @@
 	  }
 
 	  div.form-control {
-	  	margin:1% 1.38em;
-	  	padding:0 3.83%;
+	  	margin: 0.3em 0 0 1.38em;
+	  	padding: 0 3.83%;
 	  }
 
 	  div.footer-text input[type=text] {
@@ -211,4 +236,14 @@
 	  	border: 1px solid red;
 	  }
 
+	  .btn-red {
+	  	margin: 0;
+	  }
+
+}
+
+@media only screen and (max-width: 320px) {
+	div.dish {
+		width:275px;
+	}
 }

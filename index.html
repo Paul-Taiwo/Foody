@@ -7,40 +7,45 @@
 
 	<title>Foody</title>
 
+	<!-- Font-awesome -->
 	<link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
 
+	<!-- Main stylesheet -->
 	<link rel="stylesheet" href="css/main.css" type="text/css"/>
 	
+	<!-- Responsive -->
 	<link rel="stylesheet" media="screen" href="css/responsive.css" type="text/css"/>
 
+	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Poppins:40,0,700" rel="stylesheet"/>
 
+	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/fav.png" />
 
 </head>
 <body>
 
 	<header id="header">
-	
-			<div class="logo">
-				<h1 style="font-family: 'Lobster', cursive;">FOODY</h1>
-			</div>
-			<div id="icon">
-				<a href="javascript:void(0);" onclick="openMenu()">
-					<i class="fa fa-bars fa-2x"></i>
-				</a>
-			</div>
-			<nav id="myTopNav" class="navtoggle">
-				<ul class="header_list">
-					<li class="active"><a href="index.html">HOME</a></li>
-					<li><a href="#">PAGES</a></li>
-					<li><a href="pages/menu.html">MENU</a></li>
-					<li><a href="pages/gallery.html">GALLERY</a></li>
-					<li><a href="pages/blog.html">BLOG</a></li>
-					<li><a href="pages/contact.html">CONTACTS</a></li>
-				</ul>
-			</nav>
-	
+		
+		<div class="logo">
+			<h1 style="font-family: 'Lobster', cursive;">FOODY</h1>
+		</div>
+		<div id="icon">
+			<a href="javascript:void(0);" onclick="openMenu()">
+				<i class="fa fa-bars fa-2x"></i>
+			</a>
+		</div>
+		<nav id="myTopNav" class="navtoggle">
+			<ul class="header_list">
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li><a href="#">PAGES</a></li>
+				<li><a href="pages/menu.html">MENU</a></li>
+				<li><a href="pages/gallery.html">GALLERY</a></li>
+				<li><a href="pages/blog.html">BLOG</a></li>
+				<li><a href="pages/contact.html">CONTACTS</a></li>
+			</ul>
+		</nav>
+		
 	</header>
 
 	<section id="hero-image">
@@ -63,7 +68,7 @@
 					tempor incididunt ut labore et dolore mag</p>
 						</div>
 						<div class="ceo">
-							<img id="small" src="img/paul.jpg" alt="C.E.O" width="50" height="50">
+							<img id="small" src="./img/paul.jpg" alt="C.E.O" width="50" height="50">
 							<div class="ceo-text">
 								<h4>PAUL TAIWO</h4>
 								<h6 style="color:#ff0000;">C.E.O FOODY</h6>
@@ -250,11 +255,12 @@
 
 				<div class="form-control">
 					<label class="label">Person </label>
-					<input type="text" placeholder="Person">
+					<input type="text" id="person" placeholder="Person">
 				</div>
 
-				<button class="btn-red">Find Table</button>
-
+				<div class="form-control">
+					<button class="btn-red">Find Table</button>
+				</div>
 			</form><!-- Form End -->
 		</div>
 
